@@ -1,91 +1,110 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
-  },
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
-  },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+    "$schema": "https://mintlify.com/schema.json",
+    "name": "Fixr Docs",
+    "logo": {
+        "dark": "/public/logo/logo_dark.svg",
+        "light": "/public/logo/logo_light.svg"
     },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+    "favicon": "/favicon.svg",
+    "colors": {
+        "primary": "#0B45EA",
+        "light": "#1F65FE",
+        "dark": "#0B45EA",
+        "anchors": {
+            "from": "#0B45EA",
+            "to": "#1F65FE"
+        }
     },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+    "topbarLinks": [
+        {
+            "name": "Contato",
+            "url": "mailto:hi@ricardoamorimfam@gmail.com"
+        }
+    ],
+    "topbarCtaButton": {
+        "name": "Linktree",
+        "url": "https://linktr.ee/stocck"
+    },
+    "tabs": [
+        {
+            "name": "Documentação",
+            "url": "/"
+        },
+        {
+            "name": "1° - Funcionalidades e Interface",
+            "url": "modelo"
+        },
+        {
+            "name": "2° - Banco de dados",
+            "url": "bancodedados"
+        }
+    ],
+    "anchors": [
+        {
+            "name": "Links úteis",
+            "icon": "link",
+            "url": "https://linktr.ee/stocck"
+        },
+        {
+            "name": "Equipe",
+            "icon": "users",
+            "url": "https://mintlify.com/blog"
+        }
+    ],
+    "navigation": [
+        {
+            "group": "Início",
+            "pages": ["introducao", "comousar"]
+        },
+        {
+            "group": "Início",
+            "pages": ["modelo/introducao"]
+        },
+        {
+            "group": "Regras de negócio",
+            "pages": [
+                "modelo/regras-de-negocio/problema",
+                "modelo/regras-de-negocio/objetivos",
+                "modelo/regras-de-negocio/publico-alvo",
+                "modelo/regras-de-negocio/requisitos"
+            ]
+        },
+        {
+            "group": "Funcionalidades",
+            "pages": ["modelo/funcionalidades/geral", "modelo/funcionalidades/casos-de-uso"]
+        },
+        {
+            "group": "Interface do Sistema",
+            "pages": [
+                "modelo/interface/prototipos",
+                "modelo/interface/sistema",
+                "modelo/interface/telas"
+            ]
+        },
+        {
+            "group": "Início",
+            "pages": ["bancodedados/introducao"]
+        },
+        {
+            "group": "Modelagem de Dados",
+            "pages": ["bancodedados/modelagem/conceitual", "bancodedados/modelagem/fisico"]
+        },
+        {
+            "group": "Operações e Consultas",
+            "pages": [
+                "bancodedados/operacoes/queries",
+                "bancodedados/operacoes/integridade",
+                "bancodedados/operacoes/procedures"
+            ]
+        },
+        {
+            "group": " Implementação e Ferramentas",
+            "pages": ["bancodedados/ferramentas/escolhidas"]
+        }
+    ],
+    "footerSocials": {
+        "x": "https://x.com/mintlify",
+        "github": "https://github.com/mintlify",
+        "linkedin": "https://linkedin.com/company/mintlify"
     }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
-    }
-  ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
-  }
 }
