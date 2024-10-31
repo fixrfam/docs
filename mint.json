@@ -31,11 +31,11 @@
             "url": "/"
         },
         {
-            "name": "1° - Funcionalidades e Interface",
+            "name": "1° Funcionalidades e Interface",
             "url": "modelo"
         },
         {
-            "name": "2° - Banco de dados",
+            "name": "2° Banco de dados",
             "url": "bancodedados"
         }
     ],
@@ -64,9 +64,16 @@
             "group": "Regras de negócio",
             "pages": [
                 "modelo/regras-de-negocio/problema",
-                "modelo/regras-de-negocio/objetivos",
+                "modelo/regras-de-negocio/solucoes",
                 "modelo/regras-de-negocio/publico-alvo",
-                "modelo/regras-de-negocio/requisitos"
+                {
+                    "group": "Requisitos",
+                    "icon": "list",
+                    "pages": [
+                        "modelo/regras-de-negocio/requisitos/funcionais",
+                        "modelo/regras-de-negocio/requisitos/nao-funcionais"
+                    ]
+                }
             ]
         },
         {
