@@ -18,12 +18,12 @@
     "topbarLinks": [
         {
             "name": "Contato",
-            "url": "mailto:hi@ricardoamorimfam@gmail.com"
+            "url": "mailto:fixrfam@gmail.com"
         }
     ],
     "topbarCtaButton": {
         "name": "Linktree",
-        "url": "https://linktr.ee/stocck"
+        "url": "https://linktr.ee/fixrfam"
     },
     "tabs": [
         {
@@ -43,12 +43,12 @@
         {
             "name": "Links úteis",
             "icon": "link",
-            "url": "https://linktr.ee/stocck"
+            "url": "https://linktr.ee/fixrfam"
         },
         {
             "name": "Equipe",
             "icon": "users",
-            "url": "https://mintlify.com/blog"
+            "url": "https://linktr.ee/fixrfam"
         }
     ],
     "navigation": [
@@ -82,11 +82,7 @@
         },
         {
             "group": "Interface do Sistema",
-            "pages": [
-                "modelo/interface/prototipos",
-                "modelo/interface/sistema",
-                "modelo/interface/telas"
-            ]
+            "pages": ["modelo/interface/sistema", "modelo/interface/telas"]
         },
         {
             "group": "Início",
@@ -110,8 +106,6 @@
         }
     ],
     "footerSocials": {
-        "x": "https://x.com/mintlify",
-        "github": "https://github.com/mintlify",
-        "linkedin": "https://linkedin.com/company/mintlify"
+        "website": "https://linktr.ee/fixrfam"
     }
 }

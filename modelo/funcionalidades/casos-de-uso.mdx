@@ -4,3 +4,85 @@ description: "Exemplos de como os usuários irão interagir com o sistema para r
 icon: "users"
 iconType: "duotone"
 ---
+
+O Fixr foi desenvolvido para facilitar o gerenciamento das assistências técnicas, automatizando processos e organizando informações essenciais para o acompanhamento das Ordens de Serviço (OS). Nesta seção, exploraremos os principais casos de uso do sistema, que abordam tanto funções para o atendimento direto ao cliente quanto operações de gestão interna.
+
+---
+
+## Principais Casos de Uso
+
+Abaixo, são detalhadas as funcionalidades principais do Fixr, que permitem desde a criação de ordens de serviço até o controle de estoque.
+
+<CardGroup cols={2}>
+
+<Card title='Registrar Ordem de Serviço' icon='clipboard'>
+    Permite que o técnico ou atendente **registre uma nova OS** para um cliente, com informações
+    como descrição do problema, data de entrada, previsão de conclusão e responsável. Esse registro
+    inicializa o fluxo de atendimento e facilita o acompanhamento da OS até a sua conclusão.
+</Card>
+
+<Card title='Gerar Orçamento para OS' icon='wallet'>
+    No contexto de uma OS ativa, o técnico pode **gerar um orçamento** detalhado, listando serviços
+    e peças necessárias para o conserto. Esse orçamento pode ser ajustado e, após aprovação, é
+    disponibilizado ao cliente para avaliação, proporcionando um controle rigoroso dos custos.
+</Card>
+
+<Card title='Atualizar Status da OS' icon='battery-half'>
+    Durante o atendimento, o técnico pode **atualizar o status da OS** (como "Em andamento",
+    "Aguardando peças", "Concluído"). Isso permite que tanto o cliente quanto a equipe acompanhem o
+    progresso em tempo real.
+</Card>
+
+<Card title='Verificar Disponibilidade de Peças' icon='magnifying-glass'>
+    Ao adicionar itens a uma OS, o sistema permite ao técnico **checar a disponibilidade das peças
+    no estoque**. Se uma peça estiver em falta, o sistema pode sugerir um pedido de compra para que
+    o atendimento não seja interrompido.
+</Card>
+
+</CardGroup>
+
+---
+
+## Funcionalidades Complementares
+
+Além das funcionalidades principais, o Fixr oferece recursos adicionais que auxiliam no gerenciamento completo das assistências técnicas e do estoque.
+
+### Aprovação de Orçamento pelo Cliente
+
+Após o orçamento ser gerado e revisado, ele é disponibilizado ao cliente para **aprovação**. O cliente pode acessar o orçamento diretamente pelo sistema e decidir se aceita ou não a proposta. Em caso de rejeição, há espaço para reavaliação, mantendo o fluxo de comunicação direto.
+
+### Emissão de Pedidos de Compra de Peças
+
+Caso uma peça esteja em falta, o sistema automaticamente sugere a criação de um **pedido de compra**, vinculado aos fornecedores cadastrados na plataforma. Esse processo ajuda a manter o estoque atualizado e assegura que o atendimento ao cliente seja feito sem interrupções.
+
+### Gerenciamento de Chamados de Atendimento
+
+O Fixr também permite o **registro de chamados de atendimento** relacionados a uma OS específica. Esses chamados podem incluir dúvidas, sugestões ou solicitações adicionais feitas pelo cliente, permitindo um histórico completo e fácil acesso a qualquer interação durante o serviço.
+
+<CardGroup cols={2}>
+
+<Card title='Consultar Histórico de OS' icon='clock-rotate-left'>
+    Usuários com permissões adequadas podem **consultar o histórico completo de Ordens de Serviço**,
+    o que permite revisar serviços realizados anteriormente, analisar tendências de atendimento e
+    observar o desempenho do time.
+</Card>
+
+<Card title='Controle de Estoque' icon='box'>
+    O sistema mantém o **controle de entradas e saídas de peças no estoque**. Cada movimentação é
+    registrada, garantindo que todos os produtos estejam atualizados e contabilizados.
+</Card>
+
+</CardGroup>
+
+---
+
+<Info>
+    Para mais detalhes sobre os requisitos específicos e o funcionamento das interfaces, consulte as
+    seções de [requisitos funcionais](/modelo/regras-de-negocio/requisitos/funcionais) e o [modelo
+    de interface](/modelo/interface/sistema).
+</Info>
+
+<Tip>
+    Estes casos de uso foram desenhados para maximizar a eficiência no atendimento, melhorando a
+    experiência tanto dos técnicos quanto dos clientes.
+</Tip>
