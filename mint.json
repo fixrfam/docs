@@ -19,6 +19,10 @@
         {
             "name": "Contato",
             "url": "mailto:fixrfam@gmail.com"
+        },
+        {
+            "name": "Github",
+            "url": "https://github.com/fixrfam"
         }
     ],
     "topbarCtaButton": {
@@ -86,7 +90,7 @@
         },
         {
             "group": "Início",
-            "pages": ["bancodedados/introducao"]
+            "pages": ["bancodedados/introducao", "bancodedados/artigo"]
         },
         {
             "group": "Modelagem de Dados",
@@ -106,6 +110,7 @@
         }
     ],
     "footerSocials": {
-        "website": "https://linktr.ee/fixrfam"
+        "website": "https://linktr.ee/fixrfam",
+        "github": "https://github.com/fixrfam"
     }
 }

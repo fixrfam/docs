@@ -4,3 +4,69 @@ description: "Descrição das ferramentas de modelagem e SGBD."
 icon: "wrench"
 iconType: "solid"
 ---
+
+No desenvolvimento do banco de dados, diversas ferramentas foram essenciais para a criação e gestão do mesmo. Essas ferramentas foram escolhidas visando a robustez, praticidade e escalabilidade do sistema, além de garantir uma boa experiência de uso durante o desenvolvimento e a manutenção. Abaixo estão descritas as principais tecnologias adotadas para o banco de dados.
+
+## MySQL
+
+O MySQL foi selecionado como o sistema gerenciador de banco de dados (SGBD) pela sua eficiência, popularidade e capacidade de lidar com grandes volumes de dados, o que é ideal para o contexto de gerenciamento de assistências técnicas. A criação das tabelas, definição dos relacionamentos e tipos de dados foram todos realizados via scripts SQL, de acordo com o modelo físico do banco de dados.
+
+### Por que o MySql?
+
+<Steps>
+    <Step title='Simplicidade e Facilidade de Uso'>
+        O MySQL é amplamente reconhecido por sua **simplicidade e facilidade de uso**. A sua
+        instalação e configuração são diretas, permitindo que novos desenvolvedores se familiarizem
+        rapidamente com o sistema. Além disso, a **curva de aprendizado é mais suave** em comparação
+        com outros SGBDs, como o Oracle, que pode exigir um conhecimento mais profundo para
+        configuração e gerenciamento.
+    </Step>
+    <Step title='Desempenho e Escalabilidade'>
+        O MySQL é otimizado para operações de **leitura e escrita de alto desempenho**, tornando-o
+        uma excelente escolha para aplicações que demandam velocidade e eficiência. Embora outros
+        bancos de dados, como o PostgreSQL, ofereçam recursos avançados, o MySQL se destaca em
+        cenários onde a performance em operações básicas é prioritária, alinhando-se à proposta do
+        Fixr.
+    </Step>
+    <Step title='Custo e Acesso'>
+        O MySQL é uma **solução gratuita**, tornando-o acessível para projetos de todos os tamanhos.
+        Em comparação, o Oracle é conhecido por seus altos custos de licenciamento, que podem ser
+        limitantes para empresas em crescimento. O PostgreSQL também seria uma otima opção em
+        questão de custos e deploy em cloud, o que poderá ser considerado mais a frente.
+    </Step>
+    <Step title='Ampla Comunidade e Suporte'>
+        O MySQL possui uma **comunidade ativa** e uma vasta **base de usuários**, facilitando o
+        acesso a recursos, tutoriais e suporte. Essa comunidade contribui para o rápido
+        desenvolvimento de plugins e extensões, permitindo que os desenvolvedores encontrem
+        **soluções prontas** para muitos desafios comuns.
+    </Step>
+    <Step title='Integração e Compatibilidade'>
+        Por ser um dos **SGBDs mais populares**, o MySQL é amplamente suportado por diversas
+        ferramentas de desenvolvimento, frameworks e linguagens de programação. Isso facilita a
+        **integração com outras tecnologias** e a adoção de boas práticas de desenvolvimento, ao
+        contrário de outros SGBDs que podem exigir soluções proprietárias.
+    </Step>
+</Steps>
+<Note>
+    Para mais informações sobre o MySQL, visite o site oficial: [MySQL](https://www.mysql.com/).
+</Note>
+
+## brModelo
+
+A modelagem inicial dos dados foi feita utilizando o **brModelo**, uma ferramenta de design para banco de dados que possibilita a criação de diagramas de Entidade-Relacionamento (DER). Essa modelagem ajudou na estruturação das entidades e seus relacionamentos, fornecendo uma visão clara e organizada das regras de negócio antes da implementação no SGBD.
+
+<Note>
+    Para mais informações sobre o brModelo, acesse: [brModelo](https://www.sis4.com/brModelo/).
+</Note>
+
+## dBeaver
+
+O **dBeaver** é uma interface gráfica de usuário (GUI) usada para gerenciar o banco de dados MySQL de forma mais intuitiva e visual. Com ele, é possível explorar dados, executar consultas e monitorar o desempenho do banco. A interface do dBeaver permite que o desenvolvedor visualize a estrutura do banco e execute scripts SQL sem a necessidade de um terminal, facilitando assim o gerenciamento e a manutenção dos dados durante o ciclo de vida da aplicação.
+
+<Note>Saiba mais sobre o dBeaver: [dBeaver](https://dbeaver.io/).</Note>
+
+## Docker
+
+Para a containerização do banco de dados, utilizou-se o **Docker**, uma plataforma que permite empacotar a aplicação em containers. Com o Docker, o banco de dados pode ser executado em diferentes ambientes de maneira consistente e isolada, facilitando o desenvolvimento, testes e deploy da aplicação. O uso do Docker possibilita a criação de uma instância do banco MySQL configurável, que pode ser facilmente compartilhada e replicada entre a equipe.
+
+<Note>Para saber mais sobre o Docker, visite: [Docker](https://www.docker.com/).</Note>
