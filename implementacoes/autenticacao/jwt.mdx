@@ -1,0 +1,16 @@
+---
+title: "Autenticação JWT"
+description: "Funcionamento do protocolo JWT."
+icon: "shield-user"
+iconType: "solid"
+---
+O sistema de autenticação utiliza JWTs e Refresh-Tokens para autenticar os usuários, seguindo um ciclo onde, inicialmente, o usuário faz login com e-mail e senha. O servidor, então, retorna um token de acesso JWT, válido por 5 minutos, e um refresh token, válido por 7 dias. A partir disso, o sistema realiza requisições para acessar os recursos desejados, enviando o token JWT junto a cada chamada. O servidor valida esse token, verificando sua assinatura HMAC, e, se estiver válido, retorna os recursos solicitados. 
+
+Quando o JWT expira, o sistema tenta usá-lo novamente, mas o servidor nega a requisição e exige a revalidação. Nesse momento, o sistema envia o refresh token para obter um novo JWT. O servidor valida o refresh token e, se ele for válido, emite um novo JWT e um novo refresh token. Esse ciclo se repete sempre que o token de acesso expira. Assim, o sistema valida que os usuários possuam acesso ao sistema, além de garantir que não alteraram informações do token, com base na assinatura, e que não burlaram o processo de login ou tiveram seu JWT roubado, com base no refreshToken e no tempo curto de validade, garantindo um sistema seguro e confiável aos utilizadores finais.
+
+A imagem abaixo ilustra a troca de mensagens no protocolo JWT.
+![Hero](/public/images/image_jwt.png)
+
+<Note>
+    Para mais informações sobre o protocolo JWT, visite o site oficial: [protocolo JWT](https://docs.cloud.google.com/api-gateway/docs/authenticating-users-jwt?hl=pt-br).
+</Note>
