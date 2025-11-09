@@ -1,0 +1,116 @@
+{
+    "$schema": "https://mintlify.com/schema.json",
+    "name": "Fixr Docs",
+    "logo": {
+        "dark": "/public/logo/logo_dark.svg",
+        "light": "/public/logo/logo_light.svg"
+    },
+    "favicon": "/favicon.svg",
+    "colors": {
+        "primary": "#0B45EA",
+        "light": "#1F65FE",
+        "dark": "#0B45EA",
+        "anchors": {
+            "from": "#0B45EA",
+            "to": "#1F65FE"
+        }
+    },
+    "topbarLinks": [
+        {
+            "name": "Contato",
+            "url": "mailto:fixrfam@gmail.com"
+        },
+        {
+            "name": "Github",
+            "url": "https://github.com/fixrfam"
+        }
+    ],
+    "topbarCtaButton": {
+        "name": "Linktree",
+        "url": "https://linktr.ee/fixrfam"
+    },
+    "tabs": [
+        {
+            "name": "Documentação",
+            "url": "/"
+        },
+        {
+            "name": "1° Funcionalidades e Interface",
+            "url": "modelo"
+        },
+        {
+            "name": "2° Banco de dados",
+            "url": "bancodedados"
+        }
+    ],
+    "anchors": [
+        {
+            "name": "Links úteis",
+            "icon": "link",
+            "url": "https://linktr.ee/fixrfam"
+        },
+        {
+            "name": "Equipe",
+            "icon": "users",
+            "url": "https://linktr.ee/fixrfam"
+        }
+    ],
+    "navigation": [
+        {
+            "group": "Início",
+            "pages": ["introducao", "comousar"]
+        },
+        {
+            "group": "Início",
+            "pages": ["modelo/introducao"]
+        },
+        {
+            "group": "Regras de negócio",
+            "pages": [
+                "modelo/regras-de-negocio/problema",
+                "modelo/regras-de-negocio/solucoes",
+                "modelo/regras-de-negocio/publico-alvo",
+                {
+                    "group": "Requisitos",
+                    "icon": "list",
+                    "pages": [
+                        "modelo/regras-de-negocio/requisitos/funcionais",
+                        "modelo/regras-de-negocio/requisitos/nao-funcionais"
+                    ]
+                }
+            ]
+        },
+        {
+            "group": "Funcionalidades",
+            "pages": ["modelo/funcionalidades/geral", "modelo/funcionalidades/casos-de-uso"]
+        },
+        {
+            "group": "Interface do Sistema",
+            "pages": ["modelo/interface/sistema", "modelo/interface/telas"]
+        },
+        {
+            "group": "Início",
+            "pages": ["bancodedados/introducao", "bancodedados/artigo"]
+        },
+        {
+            "group": "Modelagem de Dados",
+            "pages": ["bancodedados/modelagem/conceitual", "bancodedados/modelagem/fisico"]
+        },
+        {
+            "group": "Operações e Consultas",
+            "pages": [
+                "bancodedados/operacoes/queries",
+                "bancodedados/operacoes/integridade",
+                "bancodedados/operacoes/procedures"
+            ]
+        },
+        {
+            "group": " Implementação e Ferramentas",
+            "pages": ["bancodedados/ferramentas/escolhidas"]
+        }
+    ],
+    "footerSocials": {
+        "website": "https://linktr.ee/fixrfam",
+        "github": "https://github.com/fixrfam"
+    }
+}

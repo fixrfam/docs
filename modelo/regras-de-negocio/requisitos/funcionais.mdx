@@ -1,0 +1,83 @@
+---
+title: "Requisitos Funcionais"
+sidebarTitle: "Funcionais"
+description: "Lista de requisitos funcionais da aplicação"
+icon: "leaf"
+iconType: "solid"
+---
+
+Os requisitos funcionais representam as funcionalidades e características essenciais de um sistema que atendem diretamente às necessidades do usuário e determinam o que o sistema deve fazer. Para organizar esses requisitos, eles são classificados em três categorias principais:
+
+-   **Essenciais**: Requisitos críticos para o funcionamento básico do sistema, que devem ser implementados prioritariamente para garantir a funcionalidade mínima.
+-   **Importantes**: Requisitos que melhoram a eficiência e usabilidade, mas que são secundários aos essenciais.
+-   **Desejáveis**: Requisitos que podem ser implementados para otimizar a experiência do usuário e fornecer funcionalidades adicionais.
+
+<Info>Clique nos menus para ver o conteúdo de cada lista!</Info>
+
+<AccordionGroup>
+
+<Accordion title="Requisitos Essenciais" icon='circle-1' iconType='duotone'>
+Esses requisitos são críticos para o funcionamento básico do sistema e devem ser implementados com máxima prioridade.
+
+-   **Cadastro e gerenciamento de ordens de serviço (OS)**
+
+    -   Permitir a criação, atualização e exclusão de OS.
+    -   Associar peças e serviços a cada OS.
+    -   Monitorar o status de progresso das OS (e.g., aguardando, em andamento, finalizado).
+
+-   **Interface para visualização de OS e orçamentos**
+
+    -   Permitir que técnicos e clientes acessem OS e orçamentos em tempo real.
+    -   Exibir histórico de orçamentos e status das OS para clientes e técnicos.
+
+-   **Geração e gerenciamento de orçamentos**
+
+    -   Gerar orçamentos para cada OS com itens e serviços incluídos.
+    -   Associar o orçamento ao técnico responsável e ao cliente.
+    -   Permitir a aprovação ou rejeição de orçamentos pelos clientes.
+
+-   **Controle de estoque de peças**
+
+    -   Gerenciar entradas e saídas de peças do estoque.
+    -   Atualizar automaticamente o estoque ao adicionar peças a uma OS.
+    -   Notificar sobre peças com baixo estoque e criar pedidos de compra.
+
+-   **Design responsivo e acessível**
+    -   Otimizar a interface para dispositivos móveis e garantir uma visualização adequada em diferentes tamanhos de tela.
+    -   Aplicar práticas de acessibilidade para uma interface inclusiva e fácil de usar.
+
+</Accordion>
+
+<Accordion title="Requisitos Importantes" icon='circle-2' iconType='duotone'>
+Requisitos importantes são secundários aos essenciais, mas impactam significativamente a eficiência e usabilidade do sistema.
+
+-   **Notificações e alertas**
+
+    -   Enviar notificações para os responsáveis sobre atualizações de status das OS.
+    -   Alertar quando itens do orçamento forem adicionados ou removidos e quando pedidos de compra forem criados.
+
+-   **Gestão de pedidos de compra**
+
+    -   Criar e gerenciar pedidos de compra para peças em falta.
+    -   Associar pedidos de compra a fornecedores cadastrados na plataforma.
+
+-   **Sistema de permissões de usuário**
+    -   Configurar níveis de acesso (e.g., atendente, técnico, administrador).
+    -   Garantir controle de acesso adequado para balcão de atendimento e laboratório técnico.
+
+</Accordion>
+
+<Accordion title="Requisitos Desejáveis" icon='circle-3' iconType='duotone'>
+Requisitos desejáveis são os de menor prioridade e podem ser implementados para melhorar a experiência do usuário.
+
+-   **Dashboard de relatórios e métricas**
+
+    -   Gerar relatórios sobre volume de OS, consumo de peças e tempo de conclusão de serviços.
+    -   Oferecer métricas para análise de desempenho de técnicos e de estoque.
+
+-   **Histórico de clientes e serviços**
+    -   Permitir que o sistema armazene e exiba o histórico de atendimentos e serviços realizados para cada cliente.
+
+</Accordion>
+
+</AccordionGroup>
