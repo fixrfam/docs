@@ -41,6 +41,14 @@
         {
             "name": "2° Banco de dados",
             "url": "bancodedados"
+        },
+        {
+            "name": "3° Implementações iniciais",
+            "url": "implementacoes"
+        },
+        {
+            "name": "4° OAuth e cliente",
+            "url": "OAuth_e_cliente"
         }
     ],
     "anchors": [
@@ -107,7 +115,41 @@
         {
             "group": " Implementação e Ferramentas",
             "pages": ["bancodedados/ferramentas/escolhidas"]
+        },
+        {
+            "group": "Início", 
+            "pages": ["implementacoes/introducao", "implementacoes/artigo"]
+        },
+        {
+            "group": "Implementações e Ferramentas",
+            "pages": ["implementacoes/ferramentas/escolhidas", "implementacoes/ferramentas/interfaces"]
+        },
+        {
+            "group": "Autenticação",
+            "pages": ["implementacoes/autenticacao/jwt"]
+        },
+        {
+            "group": "Cadastros",
+            "pages": ["implementacoes/cadastros/empresas_e_funcionarios"]
+        },
+        {
+            "group": "Início", 
+            "pages": ["OAuth_e_cliente/introducao", "OAuth_e_cliente/artigo"]
+        },
+        {
+            "group": "Implementações e Ferramentas",
+            "pages": ["OAuth_e_cliente/ferramentas/escolhidas", "OAuth_e_cliente/ferramentas/interfaces"]
+        },
+        {
+            "group": "Autenticação", 
+            "pages": ["OAuth_e_cliente/autenticacao/oauth"]
+        },
+        {
+            "group": "Cadastros",
+            "pages": ["OAuth_e_cliente/cadastros/cadastro_cliente"]
         }
+        
+        
     ],
     "footerSocials": {
         "website": "https://linktr.ee/fixrfam",
