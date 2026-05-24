@@ -169,6 +169,13 @@
             ]
           },
           {
+            "group": "Implementações e Ferramentas",
+            "pages": [
+              "ordem_de_servico_e_rbac/ferramentas/escolhidas",
+              "ordem_de_servico_e_rbac/ferramentas/interfaces"
+            ]
+          },
+          {
             "group": "Sistema de Permissões",
             "pages": [
               "ordem_de_servico_e_rbac/sistema_permissoes/rbac"
