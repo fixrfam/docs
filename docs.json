@@ -157,6 +157,37 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "5° Cadastro de ordens de serviço, RBAC e Infraestrutura",
+        "groups": [
+          {
+            "group": "Início",
+            "pages": [
+              "ordem_de_servico_e_rbac/introducao",
+              "ordem_de_servico_e_rbac/artigo"
+            ]
+          },
+          {
+            "group": "Sistema de Permissões",
+            "pages": [
+              "ordem_de_servico_e_rbac/sistema_permissoes/rbac"
+            ]
+          },
+          {
+            "group": "Cadastros e gerenciamentos",
+            "pages": [
+              "ordem_de_servico_e_rbac/cadastros/cadastro_ordem",
+              "ordem_de_servico_e_rbac/cadastros/gerenciamento_ordem"
+            ]
+          },
+          {
+            "group": "Infraestrutura e CI/CD",
+            "pages": [
+              "ordem_de_servico_e_rbac/automacoes/infraestrutura_como_codigo_ci_cd"
+            ]
+          }
+        ]
       }
     ],
     "global": {
