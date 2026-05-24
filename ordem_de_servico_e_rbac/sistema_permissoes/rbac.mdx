@@ -1,0 +1,24 @@
+---
+title: "Sistema de permissões- RBAC"
+sidebarTitle: "Sistema de permissões- RBAC"
+icon: "shield"
+iconType: "solid"
+---
+No quinto semestre foi desenvolvido o sistema de permissões RBAC que direciona os tipos de acesso ao sistema com base no cargo exercido na organização
+
+## Sistema de permissões- RBAC
+O sistema de autorização RBAC é um conceito de segurança que restringe o acesso a recursos com base nas funções de cada usuário dentro de uma organização, e não em suas identidades individuais. Este modelo estabelece uma camada de abstração onde privilégios são agrupados em papéis lógicos, permitindo a aplicação rigorosa do princípio do menor privilégio e da separação de deveres.
+
+Sua estrutura fundamenta-se em relações de mapeamento em que o usuário possui um cargo na corporação e a partir disso recebe o seu acesso com o permissionamento correto de acordo com seu papel dentro do negócio. Assim, ao tratar a segurança como um reflexo dos processos de negócio, a governança é facilitada, possibilitando que o Fixr também herde a hierarquia empresarial do negócio.
+
+No Fixr, o sistema RBAC permite que cada setor tenha os seus tipos de permissionamento, e ao administrador mestre, visão de todos os setores. A imagem abaixo mostra como são separadas as permissões de acordo com os cargos.
+
+![Hero](/public/images/sistema_rbac.png)
+
+Os técnicos de laboratório são responsáveis por todas as etapas do processo de manutenção dos aparelhos. Suas atividades incluem identificar o defeito apresentado, realizar os procedimentos necessários para correção e executar testes para garantir a qualidade do serviço e assegurar que o problema foi resolvido. Após a conclusão dessas etapas, a ordem de serviço é finalizada e encaminhada para o status de entrega, no qual o cliente é notificado sobre a conclusão da manutenção e orientado a retirar o aparelho. 
+
+Os estoquistas são responsáveis pela gestão dos insumos utilizados nos reparos, realizando o controle de entrada e saída de peças no sistema. Sempre que um item é destinado a uma ordem de serviço, sua retirada é registrada automaticamente e, caso a quantidade disponível atinja um nível baixo, o Fixr emite um aviso para reposição. O sistema também permite o contato direto com fornecedores, centralizando e facilitando o processo de compra. Quando novas peças chegam, é feita a conferência da carga e o registro dos materiais no sistema. Ao solicitar peças para um reparo, o técnico envia o pedido ao estoque, que separa e disponibiliza os itens necessários em seu estoque individual, permitindo o controle das peças sob sua responsabilidade. Caso algum item não seja utilizado ou tenha sido empregado apenas para testes, ele deve ser devolvido ao estoque para utilização em futuras ordens de serviço.
+
+Os recepcionistas têm como responsabilidade coletar as informações, defeitos e relatos apresentados pelo cliente, etapa essencial para direcionar a análise técnica do aparelho. Nesse processo, são registrados os dados do cliente, as informações do dispositivo e a descrição do problema relatado. O cadastro da ordem de serviço também conta com um campo para inserção de imagens, utilizado para documentar danos físicos ou detalhes estéticos do aparelho, garantindo maior segurança tanto para o cliente quanto para a assistência técnica, ao comprovar o estado do produto no momento da entrada e da retirada. 
+
+O gerente é responsável por supervisionar e gerenciar todo o funcionamento da operação. Para isso, possui permissões administrativas para criar acessos de novos funcionários e acompanhar todos os setores da empresa. Em conjunto com a supervisão dos líderes de cada área e com o apoio dos paineis gerenciais do Fixr, é possível obter uma visão ampla sobre o andamento das atividades, o desempenho das equipes e os resultados da empresa.

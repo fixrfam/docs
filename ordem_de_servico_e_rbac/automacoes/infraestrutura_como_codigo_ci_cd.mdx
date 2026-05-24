@@ -1,0 +1,20 @@
+---
+title: "Infraestrutura como código - IaC e CI/CD"
+sidebarTitle: "Infraestrutura como código - IaC e CI/CD"
+icon: "shield"
+iconType: "solid"
+---
+No quinto semestre foi desenvolvida a infraestrutura para a execução do Fixr. Onde foram adotadas práticas de CI/CD com GitHub Actions e para a infraestrutura, IaC, que é feita por meio de codificação.
+
+## Infraestrutura como código - IaC e CI/CD
+A infraestrutura do Fixr foi desenvolvida com base no conceito de IaC (Infrastructure as Code ou Infraestrutura como Código), abordagem que permite gerenciar e provisionar recursos de infraestrutura, como servidores, bancos de dados e serviços auxiliares, por meio de arquivos de configuração e código, substituindo processos manuais. Nesse modelo, define-se o estado desejado da infraestrutura, enquanto as ferramentas utilizadas se encarregam de automatizar sua criação e manutenção. Essa estratégia reduz a complexidade operacional, evita inconsistências entre ambientes e permite que os esforços da equipe sejam concentrados no desenvolvimento e evolução da aplicação, em vez do gerenciamento manual da infraestrutura. 
+
+No Fixr, esse conceito foi aplicado utilizando o Alchemy, biblioteca de IaC integrada à Cloudflare que possibilita configurar toda a infraestrutura da aplicação de forma automatizada e reproduzível. Por meio dela, foram definidos os Buckets R2 utilizados para armazenamento de imagens, os Workers responsáveis pela execução e distribuição dos front-ends da plataforma com baixo consumo de recursos computacionais, além dos widgets Turnstile empregados na verificação CAPTCHA para proteção contra ataques automatizados, como tentativas de DDoS (Distributed Denial of Service). Dessa forma, toda a infraestrutura do sistema pode ser provisionada e replicada com apenas um comando. 
+
+Juntamente com a adoção de IaC, a infraestrutura do Fixr também utiliza práticas de CI/CD (Continuous Integration e Continuous Delivery/Deployment Integração Contínua e Entrega/Implantação Contínua), metodologia amplamente empregada na cultura DevOps para automatizar os processos de construção, validação, testes e publicação de software. Essa abordagem possibilita entregas mais rápidas, seguras e confiáveis, integrando pequenas alterações de código continuamente e reduzindo falhas causadas por processos manuais. 
+
+Para isso, o projeto utiliza o GitHub Actions, ferramenta nativa da plataforma GitHub voltada à automação de fluxos de desenvolvimento. Por meio dela, são executados workflows definidos em arquivos YAML, responsáveis por validar e automatizar o processo de integração e implantação da aplicação. A imagem abaixo apresenta o fluxo de funcionamento entre IaC, CI/CD e os serviços de hospedagem utilizados pelo sistema. 
+
+![Hero](/public/images/infra_fixr.png)
+
+O fluxo ocorre da seguinte maneira: alterações realizadas no código-fonte são enviadas para o repositório hospedado no GitHub, onde passam pelo processo de revisão através de Pull Requests. Após a aprovação e integração (merge) do código na branch principal (main), o GitHub Actions executa automaticamente os workflows configurados, utilizando chaves de autenticação e variáveis de ambiente necessárias para comunicação com os serviços externos.

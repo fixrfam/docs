@@ -1,0 +1,19 @@
+---
+title: "Cadastro de Ordem de Serviço"
+sidebarTitle: "Cadastro de Ordem de Serviço"
+icon: "file-text"
+iconType: "solid"
+---
+No quinto semestre foi criado o cadastro de ordens de serviço, que abriga consigo o cadastro de clientes desenvolvido anteriormente. Ambos essenciais para a gestão e gerenciamento de ordens de serviço.
+
+## Cadastro de ordem de serviço
+O cadastro de ordens de serviço permite que se crie inúmeras ordens de serviço para o mesmo cliente e/ou mesmo aparelho, caso este venha a retornar a assistência técnica por qualquer motivo. O formulário é composto por dois tipos de campos: campos de informações do cliente para que seja atrelada a ordem ao cliente e campos propriamente ditos da ordem de serviço. A parte de campos da ordem de serviço contempla informações como: marca, categoria de tipo de aparelho para organização interna do fluxo de trabalho da assistência técnica, modelo, n° de IMEI para os aparelhos que utilizam esse atributo, observações do cliente e um campo dedicado a observações do atendente com a finalidade de colocar questões que o cliente possa não ter visto, como por exemplo um arranhão, um trinco na carcaça etc. Ponto essencial para garantir tanto a segurança do cliente quanto a do profissional responsável pelo reparo. Além disso, o formulário conta também com um campo especial para a anexação de imagens a ordem de serviço. Detalhe crucial para mostrar com a máxima clareza de detalhes o estado físico que o aparelho deu entrada na assistência.
+
+Os campos de marca, modelo e categoria do aparelho utilizam a prática de Scraping para serem determinados. O fluxo de cadastro funciona de forma dinâmica: com base na marca selecionada, o sistema disponibiliza automaticamente apenas as categorias compatíveis. Após a seleção da categoria, são exibidos os modelos correspondentes à marca escolhida. Para estabelecer essa relação entre marcas, categorias, modelos e peças, foi utilizada a técnica de web scraping, aplicada à coleta automatizada de informações relacionadas a aparelhos e componentes eletrônicos.
+
+O processo consiste na execução de scripts responsáveis por extrair dados de websites públicos, utilizando proxies distribuídos geograficamente para otimizar a obtenção das informações. O scraping contempla dados de modelos, aparelhos e especificações técnicas de peças, obtidos em fontes disponíveis publicamente na internet, como GSMArena, LaptopMedia, DisplaySpecifications, entre outras plataformas especializadas.
+
+Dessa forma, durante o preenchimento da ordem de serviço, o sistema permite selecionar apenas peças compatíveis com o modelo informado, garantindo maior integridade dos dados e reduzindo a possibilidade de solicitações incorretas de componentes para reparo.
+
+Esse fluxo também possibilita que o administrador configure somente as marcas atendidas pela assistência técnica, personalizando o sistema de acordo com a realidade operacional da empresa. A imagem abaixo mostra a interface do formulário.
+![Hero](/public/images/tela_cadastro_ordem.png)

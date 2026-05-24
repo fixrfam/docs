@@ -49,6 +49,10 @@
         {
             "name": "4° OAuth e cliente",
             "url": "OAuth_e_cliente"
+        },
+        {
+            "name": "5° Cadastro ordem de serviço, RBAC e Infraestrutura",
+            "url": "ordem_de_servico_e_rbac"
         }
     ],
     "anchors": [
@@ -66,11 +70,16 @@
     "navigation": [
         {
             "group": "Início",
-            "pages": ["introducao", "comousar"]
+            "pages": [
+                "introducao",
+                "comousar"
+            ]
         },
         {
             "group": "Início",
-            "pages": ["modelo/introducao"]
+            "pages": [
+                "modelo/introducao"
+            ]
         },
         {
             "group": "Regras de negócio",
@@ -90,19 +99,31 @@
         },
         {
             "group": "Funcionalidades",
-            "pages": ["modelo/funcionalidades/geral", "modelo/funcionalidades/casos-de-uso"]
+            "pages": [
+                "modelo/funcionalidades/geral",
+                "modelo/funcionalidades/casos-de-uso"
+            ]
         },
         {
             "group": "Interface do Sistema",
-            "pages": ["modelo/interface/sistema", "modelo/interface/telas"]
+            "pages": [
+                "modelo/interface/sistema",
+                "modelo/interface/telas"
+            ]
         },
         {
             "group": "Início",
-            "pages": ["bancodedados/introducao", "bancodedados/artigo"]
+            "pages": [
+                "bancodedados/introducao",
+                "bancodedados/artigo"
+            ]
         },
         {
             "group": "Modelagem de Dados",
-            "pages": ["bancodedados/modelagem/conceitual", "bancodedados/modelagem/fisico"]
+            "pages": [
+                "bancodedados/modelagem/conceitual",
+                "bancodedados/modelagem/fisico"
+            ]
         },
         {
             "group": "Operações e Consultas",
@@ -114,42 +135,95 @@
         },
         {
             "group": " Implementação e Ferramentas",
-            "pages": ["bancodedados/ferramentas/escolhidas"]
+            "pages": [
+                "bancodedados/ferramentas/escolhidas"
+            ]
         },
         {
-            "group": "Início", 
-            "pages": ["implementacoes/introducao", "implementacoes/artigo"]
+            "group": "Início",
+            "pages": [
+                "implementacoes/introducao",
+                "implementacoes/artigo"
+            ]
         },
         {
             "group": "Implementações e Ferramentas",
-            "pages": ["implementacoes/ferramentas/escolhidas", "implementacoes/ferramentas/interfaces"]
+            "pages": [
+                "implementacoes/ferramentas/escolhidas",
+                "implementacoes/ferramentas/interfaces"
+            ]
         },
         {
             "group": "Autenticação",
-            "pages": ["implementacoes/autenticacao/jwt"]
+            "pages": [
+                "implementacoes/autenticacao/jwt"
+            ]
         },
         {
             "group": "Cadastros",
-            "pages": ["implementacoes/cadastros/empresas_e_funcionarios"]
+            "pages": [
+                "implementacoes/cadastros/empresas_e_funcionarios"
+            ]
         },
         {
-            "group": "Início", 
-            "pages": ["OAuth_e_cliente/introducao", "OAuth_e_cliente/artigo"]
+            "group": "Início",
+            "pages": [
+                "OAuth_e_cliente/introducao",
+                "OAuth_e_cliente/artigo"
+            ]
         },
         {
             "group": "Implementações e Ferramentas",
-            "pages": ["OAuth_e_cliente/ferramentas/escolhidas", "OAuth_e_cliente/ferramentas/interfaces"]
+            "pages": [
+                "OAuth_e_cliente/ferramentas/escolhidas",
+                "OAuth_e_cliente/ferramentas/interfaces"
+            ]
         },
         {
-            "group": "Autenticação", 
-            "pages": ["OAuth_e_cliente/autenticacao/oauth"]
+            "group": "Autenticação",
+            "pages": [
+                "OAuth_e_cliente/autenticacao/oauth"
+            ]
         },
         {
             "group": "Cadastros",
-            "pages": ["OAuth_e_cliente/cadastros/cadastro_cliente"]
+            "pages": [
+                "OAuth_e_cliente/cadastros/cadastro_cliente"
+            ]
+        },
+        {
+            "group": "Início",
+            "pages": [
+                "ordem_de_servico_e_rbac/introducao",
+                "ordem_de_servico_e_rbac/artigo"
+            ]
+        },
+        {
+            "group": "Implementações e Ferramentas",
+            "pages": [
+                "ordem_de_servico_e_rbac/ferramentas/escolhidas",
+                "ordem_de_servico_e_rbac/ferramentas/interfaces"
+            ]
+        },
+        {
+            "group": "Sistema de Permissões",
+            "pages": [
+                "ordem_de_servico_e_rbac/sistema_permissoes/rbac"
+            ]
+        },
+        {
+            "group": "Cadastros e gerenciamentos",
+            "pages": [
+                "ordem_de_servico_e_rbac/cadastros/cadastro_ordem",
+                "ordem_de_servico_e_rbac/cadastros/gerenciamento_ordem"
+            ]
+        },
+        {
+            "group": "Infraestrutura e CI/CD",
+            "pages": [
+                "ordem_de_servico_e_rbac/automacoes/infraestrutura_como_codigo_ci_cd"
+            ]
         }
-        
-        
     ],
     "footerSocials": {
         "website": "https://linktr.ee/fixrfam",

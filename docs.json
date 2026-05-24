@@ -1,0 +1,204 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Fixr Docs",
+  "colors": {
+    "primary": "#0B45EA",
+    "light": "#1F65FE",
+    "dark": "#0B45EA"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentação",
+        "groups": [
+          {
+            "group": "Início",
+            "pages": [
+              "introducao",
+              "comousar"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "1° Funcionalidades e Interface",
+        "groups": [
+          {
+            "group": "Início",
+            "pages": [
+              "modelo/introducao"
+            ]
+          },
+          {
+            "group": "Regras de negócio",
+            "pages": [
+              "modelo/regras-de-negocio/problema",
+              "modelo/regras-de-negocio/solucoes",
+              "modelo/regras-de-negocio/publico-alvo",
+              {
+                "group": "Requisitos",
+                "icon": "list",
+                "pages": [
+                  "modelo/regras-de-negocio/requisitos/funcionais",
+                  "modelo/regras-de-negocio/requisitos/nao-funcionais"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Funcionalidades",
+            "pages": [
+              "modelo/funcionalidades/geral",
+              "modelo/funcionalidades/casos-de-uso"
+            ]
+          },
+          {
+            "group": "Interface do Sistema",
+            "pages": [
+              "modelo/interface/sistema",
+              "modelo/interface/telas"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "2° Banco de dados",
+        "groups": [
+          {
+            "group": "Início",
+            "pages": [
+              "bancodedados/introducao",
+              "bancodedados/artigo"
+            ]
+          },
+          {
+            "group": "Modelagem de Dados",
+            "pages": [
+              "bancodedados/modelagem/conceitual",
+              "bancodedados/modelagem/fisico"
+            ]
+          },
+          {
+            "group": "Operações e Consultas",
+            "pages": [
+              "bancodedados/operacoes/queries",
+              "bancodedados/operacoes/integridade",
+              "bancodedados/operacoes/procedures"
+            ]
+          },
+          {
+            "group": " Implementação e Ferramentas",
+            "pages": [
+              "bancodedados/ferramentas/escolhidas"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "3° Implementações iniciais",
+        "groups": [
+          {
+            "group": "Início",
+            "pages": [
+              "implementacoes/introducao",
+              "implementacoes/artigo"
+            ]
+          },
+          {
+            "group": "Implementações e Ferramentas",
+            "pages": [
+              "implementacoes/ferramentas/escolhidas",
+              "implementacoes/ferramentas/interfaces"
+            ]
+          },
+          {
+            "group": "Autenticação",
+            "pages": [
+              "implementacoes/autenticacao/jwt"
+            ]
+          },
+          {
+            "group": "Cadastros",
+            "pages": [
+              "implementacoes/cadastros/empresas_e_funcionarios"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "4° OAuth e cliente",
+        "groups": [
+          {
+            "group": "Início",
+            "pages": [
+              "OAuth_e_cliente/introducao",
+              "OAuth_e_cliente/artigo"
+            ]
+          },
+          {
+            "group": "Implementações e Ferramentas",
+            "pages": [
+              "OAuth_e_cliente/ferramentas/escolhidas",
+              "OAuth_e_cliente/ferramentas/interfaces"
+            ]
+          },
+          {
+            "group": "Autenticação",
+            "pages": [
+              "OAuth_e_cliente/autenticacao/oauth"
+            ]
+          },
+          {
+            "group": "Cadastros",
+            "pages": [
+              "OAuth_e_cliente/cadastros/cadastro_cliente"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Links úteis",
+          "href": "https://linktr.ee/fixrfam",
+          "icon": "link"
+        },
+        {
+          "anchor": "Equipe",
+          "href": "https://linktr.ee/fixrfam",
+          "icon": "users"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/public/logo/logo_light.svg",
+    "dark": "/public/logo/logo_dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Contato",
+        "href": "mailto:fixrfam@gmail.com"
+      },
+      {
+        "label": "Github",
+        "href": "https://github.com/fixrfam"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Linktree",
+      "href": "https://linktr.ee/fixrfam"
+    }
+  },
+  "footer": {
+    "socials": {
+      "website": "https://linktr.ee/fixrfam",
+      "github": "https://github.com/fixrfam"
+    }
+  }
+}
