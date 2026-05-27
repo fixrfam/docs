@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mintlify": "^4.0.241"
+    "mint": "^4.2.578"
   }
 }
